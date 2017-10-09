@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Microsoft To-Do</title>
+  <style>
+    #draggable-area {
+      -webkit-app-region: drag;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      width: 600px;
+      height: 100px;
+    }
+
+    #uiControl {
+      -webkit-app-region: no-drag;
+      position: fixed;
+      top: 4px;
+      right: 6px;
+    }
+
+    .uibutton{
+      background-color: transparent;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body style="height:100%;margin: 0px; padding: 0 px;">
+  <webview id="webview" preload="./renderer.js" src="https://todo.microsoft.com/?app" style="position:absolute;width:100%;height:100%;"></webview>
+  <div id="draggable-area">
+    <div id='uiControl'>
+      <button id="min-btn" class="uibutton">-</button>
+      <button id="max-btn" class="uibutton">+</button>
+      <button id="close-btn" class="uibutton">x</button>
+    </div>
+  </div>
+  <script>
+    require('./renderer.js')
+  </script>
+</body>
+
 </html>

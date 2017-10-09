@@ -1,22 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-microsoft-todo",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A simple wrapper for Microsoft To-Do",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/patrick330602/electron-microsoft-todo",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Microsoft",
+    "Todo",
+    "Linux"
   ],
-  "author": "GitHub",
+  "author": "patrick330602",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8"
-  }
+  },
+  "dependencies": {}
 }

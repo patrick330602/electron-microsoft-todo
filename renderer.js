@@ -1,3 +1,36 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+(function () {
+    // Retrieve remote BrowserWindow
+    const {
+      BrowserWindow
+    } = require('electron').remote
+
+    function init() {
+      // Minimize task
+      document.getElementById("min-btn").addEventListener("click", (e) => {
+        var window = BrowserWindow.getFocusedWindow();
+        window.minimize();
+      });
+
+      // Maximize window
+      document.getElementById("max-btn").addEventListener("click", (e) => {
+        var window = BrowserWindow.getFocusedWindow();
+        if (window.isMaximized()) {
+          window.unmaximize();
+        } else {
+          window.maximize();
+        }
+      });
+
+      // Close app
+      document.getElementById("close-btn").addEventListener("click", (e) => {
+        var window = BrowserWindow.getFocusedWindow();
+        window.close();
+      });
+    };
+
+    document.onreadystatechange = () => {
+      if (document.readyState == "complete") {
+        init();
+      }
+    };
+  })();
