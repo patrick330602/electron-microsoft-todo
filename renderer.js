@@ -1,36 +1,4 @@
-(function () {
-    // Retrieve remote BrowserWindow
-    const {
-      BrowserWindow
-    } = require('electron').remote
+require('electron-notification-shim')();
 
-    function init() {
-      // Minimize task
-      document.getElementById("min-btn").addEventListener("click", (e) => {
-        var window = BrowserWindow.getFocusedWindow();
-        window.minimize();
-      });
-
-      // Maximize window
-      document.getElementById("max-btn").addEventListener("click", (e) => {
-        var window = BrowserWindow.getFocusedWindow();
-        if (window.isMaximized()) {
-          window.unmaximize();
-        } else {
-          window.maximize();
-        }
-      });
-
-      // Close app
-      document.getElementById("close-btn").addEventListener("click", (e) => {
-        var window = BrowserWindow.getFocusedWindow();
-        window.close();
-      });
-    };
-
-    document.onreadystatechange = () => {
-      if (document.readyState == "complete") {
-        init();
-      }
-    };
-  })();
+console.log('Notification shim system loaded.');
+console.log('Nothing special happening here.');

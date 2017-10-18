@@ -18,5 +18,7 @@
   "devDependencies": {
     "electron": "~1.7.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-notification-shim": "^1.1.0"
+  }
 }

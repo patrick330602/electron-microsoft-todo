@@ -13,8 +13,8 @@ npm install & npm start
 ## TODO
 
 - [x] Custom Titlebar
-- [ ] Proper icon & titlebar
-- [ ] Notification Support
+- [x] Proper icon & titlebar
+- [x] Notification Support
 
 ## License
 
