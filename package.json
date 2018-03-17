@@ -1,5 +1,6 @@
 {
 	"name": "electron-microsoft-todo",
+	"productName": "Microsoft To-Do",
 	"version": "1.0.1",
 	"description": "A simple wrapper for Microsoft To-Do",
 	"main": "main.js",
@@ -10,7 +11,14 @@
 		"postinstall": "electron-builder install-app-deps"
 	},
 	"build": {
-		"appId": "pk.ms.todo"
+		"appId": "pk.ms.todo",
+		"linux": {
+			"target": [
+			  "AppImage",
+			  "snap"
+			],
+			"icon":"512x512.png"
+		  }
 	},
 	"repository": "https://github.com/patrick330602/electron-microsoft-todo",
 	"keywords": [
