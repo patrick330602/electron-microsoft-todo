@@ -1,25 +1,32 @@
 {
-  "name": "electron-microsoft-todo",
-  "version": "1.0.0",
-  "description": "A simple wrapper for Microsoft To-Do",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/patrick330602/electron-microsoft-todo",
-  "keywords": [
-    "Electron",
-    "Microsoft",
-    "Todo",
-    "Linux"
-  ],
-  "author": "patrick330602",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "~1.7.8"
-  },
-  "dependencies": {
-    "electron-notification-shim": "^1.1.0",
-    "electron-packager": "^10.1.0"
-  }
+	"name": "electron-microsoft-todo",
+	"version": "1.0.1",
+	"description": "A simple wrapper for Microsoft To-Do",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder",
+		"postinstall": "electron-builder install-app-deps"
+	},
+	"build": {
+		"appId": "pk.ms.todo"
+	},
+	"repository": "https://github.com/patrick330602/electron-microsoft-todo",
+	"keywords": [
+		"Electron",
+		"Microsoft",
+		"Todo",
+		"Linux"
+	],
+	"files": ["**/*", "build/*.*"],
+	"author": "patrick330602",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"electron": "~1.7.8"
+	},
+	"dependencies": {
+		"electron-notification-shim": "^1.1.0",
+		"electron-packager": "^10.1.0"
+	}
 }
