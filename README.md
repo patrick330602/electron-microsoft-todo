@@ -2,6 +2,8 @@
 
 Electron Version of Microsoft To-Do
 
+> This is no longer mainteained.
+
 ## Run
 
 ```bash
