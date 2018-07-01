@@ -2,7 +2,7 @@
 
 Electron Version of Microsoft To-Do
 
-> This is no longer mainteained.
+> This is no longer maintained.
 
 ## Run
 
