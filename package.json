@@ -32,7 +32,7 @@
 		"build/*.*"
 	],
 	"author": "patrick330602",
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"devDependencies": {
 		"electron": "^8.2.5",
 		"electron-builder": "^22.6.0"
