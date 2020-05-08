@@ -16,7 +16,7 @@ function createWindow () {
   mainWindow.loadURL("https://todo.microsoft.com/?app")
   
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
   mainWindow.webContents.on('did-finish-load', function() {
     mainWindow.webContents.insertCSS('.o365sx-appName, #ShellAboutMe, #ShellSettings, #O365_HeaderLeftRegion, #todoWhatsNewBtn{ display: none !important;}')
   });
