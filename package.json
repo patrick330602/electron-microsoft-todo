@@ -1,7 +1,7 @@
 {
 	"name": "microsoft-todo-unofficial",
 	"productName": "Microsoft To-Do Unofficial",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "A simple wrapper for Microsoft To-Do",
 	"main": "main.js",
 	"scripts": {
@@ -34,9 +34,7 @@
 	"author": "patrick330602",
 	"license": "MIT",
 	"devDependencies": {
-		"electron": "^8.2.5",
-		"electron-builder": "^22.6.0"
-	},
-	"dependencies": {
+		"electron": "^15.3.1",
+		"electron-builder": "^22.13.1"
 	}
 }
