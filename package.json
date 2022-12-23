@@ -1,7 +1,7 @@
 {
 	"name": "microsoft-todo-unofficial",
 	"productName": "Microsoft To-Do Unofficial",
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"description": "A simple wrapper for Microsoft To-Do",
 	"main": "main.js",
 	"scripts": {

@@ -21,7 +21,7 @@ function createWindow() {
   mainWindow.loadURL("https://todo.microsoft.com/?app");
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 
   var css = `
   .o365sx-appName,
