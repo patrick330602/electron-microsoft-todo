@@ -1,4 +1,12 @@
-const { app, BrowserWindow, Menu, shell } = require("electron");
+const { app, BrowserWindow } = require("electron");
+const contextMenu = require('electron-context-menu');
+
+contextMenu({
+	showSaveImageAs: false,
+  showSearchWithGoogle: false,
+  showInspectElement: false,
+  showCopyLink: true
+});
 
 let mainWindow;
 
