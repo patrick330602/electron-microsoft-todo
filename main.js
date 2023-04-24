@@ -18,10 +18,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL("https://todo.microsoft.com/?app");
-
-  // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
+  mainWindow.loadURL("https://to-do.live.com/tasks/");
 
   var css = `
   .o365sx-appName,
